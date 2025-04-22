@@ -16,9 +16,11 @@ export class Pokemon extends Document{
     no: number;
 
     @Prop({
+        type: [String],
         index: true
     })
-    type: string
+    types: string[]
 }
 
-export const PokemonSchema = SchemaFactory.createForClass(Pokemon)
+export const PokemonSchema = SchemaFactory.createForClass(Pokemon);
+export type PokemonDocument = Pokemon & Document;

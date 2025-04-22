@@ -61,7 +61,20 @@ pnpm run test:cov   # Cobertura de tests
 
 ## 📦 Endpoints disponibles
 
-Base URL: `/api/pokemon`
+- Base URL: `/api/pokemon`
+- Seed Data: `/api/seed`
+
+### 🔹 Cargar Pokémons
+
+`GET /api/seed`
+
+Se cargaran 50 pokémons con los atributos de número, nombre y tipos, si la carga es correcta devolvera
+```json
+{
+    "status": "Success",
+    "message": "Seed Executed"
+}
+```
 
 ### 🔹 Crear Pokémon
 
@@ -70,8 +83,9 @@ Cuerpo:
 
 ```json
 {
-  "name": "pikachu",
-  "type": "electric"
+  "name": "Pikachu",
+  "no": 25,
+  "types": ["electric"]
 }
 ```
 
