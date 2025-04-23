@@ -24,9 +24,10 @@ Licencia: `UNLICENSED`
 
 ## 🚀 Stack Tecnológico
 
-- NestJS
-- MongoDB (vía Mongoose)
-- TypeScript
+- [NestJS](https://nestjs.com/)
+- [MongoDB](https://www.mongodb.com/) (vía [Mongoose](https://mongoosejs.com/))
+- [TypeScript](https://www.typescriptlang.org/)
+- [Docker](https://www.docker.com/)
 
 ## ⚙️ Setup del proyecto
 
@@ -124,7 +125,7 @@ Cuerpo:
 
 ---
 
-## Produccion Build
+## Producción Build
 
 - Crear el archivo ```.env.prod```
 - Llenar las variables de entorno de prod de la siguiente manera:
@@ -136,5 +137,14 @@ DEFAULT_LIMIT=10
 ```
 - Cambiar el nombre MONGO_DB en caso de cambiar este valor ```mongo-poke``` en el docker-compose.prod 
 - Ejecutar la nueva imagen de Docker ```docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build```
+---
+## Test
+En caso de querer hacer pruebas, también puede usar este enlace en 
+- [Postman](https://www.postman.com/) o [Insomnia REST](https://insomnia.rest/)
+``` https://pokedex-nest-production-ada3.up.railway.app/ ```
+
+recuerde usar los endpoints
+
+---
 
 Este proyecto es parte de un aprendizaje práctico con NestJS.
