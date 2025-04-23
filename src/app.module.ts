@@ -17,7 +17,7 @@ import { EnvConfiguration } from './config/env.config';
 
     MongooseModule.forRoot(process.env.MONGO_DB!,
       {
-        dbName: 'pokemondb'
+        dbName: 'nest-pokemon'
       }
     ),
 

@@ -124,4 +124,17 @@ Cuerpo:
 
 ---
 
+## Produccion Build
+
+- Crear el archivo ```.env.prod```
+- Llenar las variables de entorno de prod de la siguiente manera:
+
+```bash
+MONGO_DB=mongodb://mongo-poke:27017/nest-pokemon
+PORT=3000
+DEFAULT_LIMIT=10
+```
+- Cambiar el nombre MONGO_DB en caso de cambiar este valor ```mongo-poke``` en el docker-compose.prod 
+- Ejecutar la nueva imagen de Docker ```docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build```
+
 Este proyecto es parte de un aprendizaje práctico con NestJS.

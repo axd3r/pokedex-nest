@@ -9,7 +9,7 @@ import { InjectModel } from '@nestjs/mongoose';
 export class PokemonService {
   constructor(
     @InjectModel(Pokemon.name)
-    private readonly PokemonModel: Model<Pokemon>){console.log(process.env.PORT);
+    private readonly PokemonModel: Model<Pokemon>){;
     }
 
   async create(createPokemonDto: CreatePokemonDto) {
