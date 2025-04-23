@@ -12,6 +12,7 @@ import { EnvConfiguration } from './config/env.config';
   imports: [
     ConfigModule.forRoot({
       load: [EnvConfiguration],
+      isGlobal: true
     }),
 
     MongooseModule.forRoot(process.env.MONGO_DB!,
