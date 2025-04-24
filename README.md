@@ -16,6 +16,8 @@
 
 Una API para gestionar Pokémon desarrollada con **NestJS** y **MongoDB**.
 
+- Está desarrollado con NestJS y utiliza Mongoose como [ODM (Object Data Modeling)](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping#Object_document_mapping) para el modelado de datos.
+
 ## ✍️ Autor
 
 **Joaquin Orihuela**  
